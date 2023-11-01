@@ -16,6 +16,7 @@ public class Collision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    //movement
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal, 8, moveVertical);
@@ -24,6 +25,7 @@ public class Collision : MonoBehaviour
     // Collision detection using tag
     void OnCollisionEnter(Collision Other)
     {
+    //if object collides with player object disappears and object count goes up
         if (Other.gameObject.CompareTag("Pick Up"))
         {
             Other.gameObject.SetActive(false);
