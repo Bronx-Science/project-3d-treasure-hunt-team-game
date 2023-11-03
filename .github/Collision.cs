@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collision : MonoBehaviour
+public class MoveCollide : MonoBehaviour
 {
     public GameBehavior gameManager;
     public static float speed = 20.0f;
